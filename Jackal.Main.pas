@@ -8,7 +8,7 @@ uses
   System.ImageList, Vcl.ImgList, PngFunctions, PngImageList, pngimage,
   Vcl.Buttons, sSpeedButton, System.Win.ScktComp, IdCustomTCPServer,
   IdTCPServer, IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient,
-  IdContext, IdSocketHandle, ES.BaseControls, ES.Layouts, LabelButton;
+  IdContext, IdSocketHandle;
 
 const
   FieldSize = 13;
@@ -138,7 +138,7 @@ type
     ServerSocket: TServerSocket;
     ClientSocket: TClientSocket;
     TimerNet: TTimer;
-    PanelClient: TEsLayout;
+    PanelClient: TPanel;
     Label1: TLabel;
     PanelMenu: TPanel;
     Bevel1: TBevel;
@@ -163,9 +163,9 @@ type
     RadioButtonBG0: TRadioButton;
     RadioButtonBG1: TRadioButton;
     RadioButtonBG2: TRadioButton;
-    LabelEx1: TLabelEx;
-    LabelEx2: TLabelEx;
-    LabelEx3: TLabelEx;
+    LabelEx1: TLabel;
+    LabelEx2: TLabel;
+    LabelEx3: TLabel;
     PngImageList1: TPngImageList;
     ListBox2: TListBox;
     procedure FormPaint(Sender: TObject);
